@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>DELLA LUCANIA</title>
 
+  <!-- Tipografía serif elegante -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Playfair Display', serif;
+      overflow: hidden;
+    }
+
+    .logo {
+      font-size: 52px;
+      letter-spacing: 6px;
+      text-align: center;
+      font-weight: 400;
+
+      /* Small caps elegante */
+      font-variant: small-caps;
+
+      /* Animación */
+      opacity: 0;
+      transform: translateY(10px);
+      animation: fadeInUp 1.6s ease-out forwards;
+    }
+
+    /* Ajuste fino en desktop */
+    @media (min-width: 768px) {
+      .logo {
+        font-size: 68px;
+        letter-spacing: 8px;
+      }
+    }
+
+    /* Animación suave */
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="logo">
+    DELLA LUCANIA
+  </div>
+</body>
+</html>
